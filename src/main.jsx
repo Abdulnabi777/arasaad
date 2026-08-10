@@ -62,7 +62,12 @@ function App() {
     <div className="app">
       <div className="noise" />
 <header className="navbar">
-  <a className="brand" href="#top" onClick={closeMenu}>
+
+  <a
+    className="brand"
+    href="#top"
+    onClick={closeMenu}
+  >
     <img
       src="/favicon.png"
       alt="ARSAAD Smart Systems"
@@ -75,10 +80,45 @@ function App() {
     </span>
   </a>
 
-  {/* Navigation */}
   <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
-    {/* your existing navigation */}
+    <a href="#solutions" onClick={closeMenu}>
+      Solutions
+    </a>
+
+    <a href="#platform" onClick={closeMenu}>
+      Platform
+    </a>
+
+    <a href="#projects" onClick={closeMenu}>
+      Projects
+    </a>
+
+    <a href="#industries" onClick={closeMenu}>
+      Industries
+    </a>
+
+    <a href="#about" onClick={closeMenu}>
+      About
+    </a>
+
+    <a
+      className="nav-cta"
+      href="#contact"
+      onClick={closeMenu}
+    >
+      Talk to us
+      <ArrowUpRight size={16} />
+    </a>
   </nav>
+
+  <button
+    className="menu-button"
+    onClick={() => setMenuOpen(!menuOpen)}
+    aria-label="Toggle navigation"
+  >
+    {menuOpen ? <X size={24} /> : <Menu size={24} />}
+  </button>
+
 </header>
 
       <main id="top">
