@@ -61,29 +61,25 @@ function App() {
   return (
     <div className="app">
       <div className="noise" />
+<header className="navbar">
+  <a className="brand" href="#top" onClick={closeMenu}>
+    <img
+      src="/favicon.png"
+      alt="ARSAAD Smart Systems"
+      className="brand-logo"
+    />
 
-      <header className="navbar">
-        <a className="brand" href="#top" onClick={closeMenu}>
-          <span className="brand-mark">A</span>
-          <span>
-            <strong>ARSAAD</strong>
-            <small>SMART SYSTEMS LLP</small>
-          </span>
-        </a>
+    <span className="brand-text">
+      <strong>ARSAAD</strong>
+      <small>SMART SYSTEMS</small>
+    </span>
+  </a>
 
-        <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <a href="#solutions" onClick={closeMenu}>Solutions</a>
-          <a href="#platform" onClick={closeMenu}>Platform</a>
-          <a href="#projects" onClick={closeMenu}>Projects</a>
-          <a href="#industries" onClick={closeMenu}>Industries</a>
-          <a href="#about" onClick={closeMenu}>About</a>
-          <a className="nav-cta" href="#contact" onClick={closeMenu}>Talk to us <ArrowUpRight size={16}/></a>
-        </nav>
-
-        <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation">
-          {menuOpen ? <X /> : <Menu />}
-        </button>
-      </header>
+  {/* Navigation */}
+  <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+    {/* your existing navigation */}
+  </nav>
+</header>
 
       <main id="top">
         <section className="hero">

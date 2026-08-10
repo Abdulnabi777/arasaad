@@ -26,17 +26,41 @@ button { font:inherit; }
 .brand {
   display: flex;
   align-items: center;
+  gap: 10px;
   text-decoration: none;
 }
 
 .brand-logo {
-  width: 150px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   display: block;
-  transition: transform 0.25s ease;
+  flex-shrink: 0;
 }
 
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+}
+
+.brand-text strong {
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+}
+
+.brand-text small {
+  margin-top: 5px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: #8da0b7;
+}
 .brand:hover .brand-logo {
   transform: scale(1.03);
 }.brand-mark { width:35px; height:35px; display:grid; place-items:center; border:1px solid rgba(157,255,114,.6); color:var(--accent); border-radius:9px; font-family:Manrope,sans-serif; font-weight:800; }
