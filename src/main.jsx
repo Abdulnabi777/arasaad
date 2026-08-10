@@ -342,13 +342,22 @@ function App() {
 
       <footer className="footer">
         <div className="footer-top">
-          <div className="footer-brand">
-            <a className="brand" href="#top">
-              <span className="brand-mark">A</span>
-              <span><strong>ARSAAD</strong><small>SMART SYSTEMS LLP</small></span>
-            </a>
-            <p>We connect customers with smart solutions.</p>
-          </div>
+<div className="footer-brand">
+  <a className="brand footer-brand-logo" href="#top">
+    <img
+      src="/favicon.png"
+      alt="ARSAAD Smart Systems"
+      className="brand-logo"
+    />
+
+    <span className="brand-text">
+      <strong>ARSAAD</strong>
+      <small>SMART SYSTEMS</small>
+    </span>
+  </a>
+
+  <p>We connect customers with smart solutions.</p>
+</div>
           <div className="footer-links">
             <div><b>Explore</b><a href="#solutions">Solutions</a><a href="#projects">Projects</a><a href="#industries">Industries</a></div>
             <div><b>Company</b><a href="#about">About us</a><a href="#contact">Contact</a><a href="#platform">Approach</a></div>
